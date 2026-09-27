@@ -531,7 +531,7 @@
     <p class="tagline">AKMoney — Budget &amp; Expense Tracker</p>
     <p class="updated">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-      Last Updated: September 23, 2026
+      Last Updated: September 26, 2026
     </p>
   </div>
 </header>
@@ -600,13 +600,13 @@
 
       <section id="introduction">
         <h2><span class="num">1</span> Introduction</h2>
-        <p>This Privacy Policy explains how AKMoney ("the App"), developed and published by AKSoft Apps ("we," "us," or "our"), handles information when you use the App. AKMoney is designed to work entirely on your device. This policy describes exactly what the App does, based on how it is actually built.</p>
+        <p>This Privacy Policy explains how AKMoney ("the App"), developed and published by AKSoft Apps ("we," "us," or "our"), handles information when you use the App. AKMoney is designed to keep your financial data on your device. This policy describes exactly what the App does, based on how it is actually built.</p>
       </section>
 
       <section id="information-we-collect">
         <h2><span class="num">2</span> Information We Collect</h2>
-        <p>AKMoney does not operate any backend server and does not automatically collect, transmit, or upload your financial data, personal information, or usage activity to us or to any third party.</p>
-        <p>The App does not use analytics, advertising, or crash-reporting services that automatically send data off your device.</p>
+        <p>AKMoney does not operate any backend server and does not automatically collect, transmit, or upload your financial data or personal information to us or to any third party. The App has no accounts, sign-in, or cloud synchronization.</p>
+        <p>The App does not use analytics, advertising, or crash-reporting services. The only network requests the App makes on its own are technical ones that do not contain your financial data: contacting Google Play to check the optional Premium product and your purchase status (Section 18), and downloading a font from Google Fonts when a financial report PDF is generated (Section 15). Those requests are handled by Google, which receives the standard technical information that accompanies any such request, such as your device's IP address.</p>
       </section>
 
       <section id="information-stored-locally">
@@ -617,14 +617,16 @@
         </h2>
         <p>To provide its features, AKMoney stores the following information locally on your device, inside the App's private storage:</p>
         <ul>
-          <li>Expenses, income, budgets, category budgets, accounts, transfers, recurring transactions, and financial goals you create</li>
+          <li>Expenses, income, budgets, category budgets, accounts, transfers, recurring transactions, and financial goals you create, kept separately in each profile you create</li>
+          <li>Profiles: the name and avatar of each profile (a built-in avatar, or a photo you choose from your device). Each profile keeps its own accounts, transactions, budgets, goals, recurring expenses, categories, and receipts, and switching profiles does not mix them</li>
           <li>Receipt or attachment images you choose to add to an expense</li>
           <li>Transaction Templates you create (see Section 13)</li>
-          <li>App preferences (such as theme, currency, and reminder settings)</li>
+          <li>App preferences (such as theme and reminder settings, and the optional display name you enter for the greeting), and each profile's currency setting</li>
           <li>Your Financial Journey progress (experience points, level, current and best streak, and achievement/milestone status) — see Section 9</li>
           <li>Your App Lock PIN, if you set one, stored using your device's secure storage (see Section 10)</li>
+          <li>A local error log of technical errors, if any occur (see Section 7)</li>
         </ul>
-        <p>This information remains on your device and is not transmitted anywhere automatically. Uninstalling the App or clearing its data will remove this information from your device.</p>
+        <p>This information remains on your device and is not transmitted anywhere automatically. Each profile's financial database is encrypted on your device. Receipt images and profile photos are stored as separate files in the App's private storage and are not separately encrypted. Uninstalling the App or clearing its data will remove this information from your device; see Section 19 for what deleting a profile removes.</p>
       </section>
 
       <section id="how-we-use-information">
@@ -635,14 +637,16 @@
       <section id="data-sharing-and-disclosure">
         <h2><span class="num">5</span> Data Sharing and Disclosure</h2>
         <p>We do not sell your information. We do not share your financial data with any third party. AKMoney does not include any advertising SDK, analytics SDK, or crash-reporting SDK capable of automatically transmitting your data to us or anyone else.</p>
-        <p>The circumstances in which data may leave your device are all described in this policy and are limited to: actions you explicitly take to share information (Sections 7, 15, and 16); use of your device's speech-recognition service if you speak a transaction entry (Section 8); exporting or restoring a backup to a storage location you choose (Section 11); and Google Play processing an in-app purchase if and when purchases are available (Section 18). In each of these cases the action is either initiated by you or handled by platform services that you or your device operator control — AKMoney does not automatically push your data anywhere.</p>
+        <p>The circumstances in which data may leave your device are all described in this policy and are limited to: actions you explicitly take to share information (Sections 7, 15, and 16); use of your device's speech-recognition service if you speak a transaction entry (Section 8); exporting or restoring a backup to a storage location you choose (Section 11); Google Play processing an in-app purchase if and when purchases are available (Section 18); and the technical Google Play and Google Fonts requests described in Section 2, which do not contain your financial data. In each of these cases the action is either initiated by you or handled by platform services that you or your device operator control — AKMoney does not automatically push your data anywhere.</p>
       </section>
 
       <section id="third-party-services">
         <h2><span class="num">6</span> Third-Party Services</h2>
         <p>AKMoney relies on the following platform services to operate or to provide optional features:</p>
         <ul>
-          <li><strong>Google Play Billing</strong> — to process optional in-app purchases, if and when available (see Section 18). AKMoney does not receive your payment card details.</li>
+          <li><strong>Google Play Billing</strong> — to check the optional Premium product and your purchase status, and to process purchases if and when they become available (see Section 18). AKMoney does not receive your payment card details.</li>
+          <li><strong>Google Fonts</strong> — when a financial report PDF is generated while your device is online, the App may download a font file from Google (see Section 15). No financial data is sent in this request.</li>
+          <li><strong>Google Play Store listing</strong> — if you tap "Rate Us" in Settings, your device opens the App's Google Play page.</li>
           <li><strong>Android operating-system share sheet</strong> — used only when you choose to share a diagnostic report, a financial report PDF, or a milestone card (see Sections 7, 15, and 16). AKMoney passes the content to the share sheet; the destination you pick determines which app or service receives it.</li>
           <li><strong>Device speech-recognition service</strong> — used only when you tap the microphone button to speak a transaction entry (see Section 8). This service is provided by your device's operating system or the device manufacturer, not by AKMoney.</li>
           <li><strong>User-selected file storage</strong> — when you use the Android file picker to save or restore a backup, you may choose a local folder or a cloud-storage provider such as Google Drive (see Section 11). AKMoney does not control that provider, does not receive your credentials for it, and does not upload backups to it automatically.</li>
@@ -654,7 +658,7 @@
         <h2><span class="num">7</span> User-Initiated Sharing / Support Requests</h2>
         <p>The App includes optional "Report a Problem" and feedback features. These features do not send anything automatically. When you choose to use them:</p>
         <ul>
-          <li>The App creates a diagnostic file on your device containing: the App name and version, your device's operating system name and version, the App's internal database schema version, a count of your app settings, any description or reproduction steps you type, and the contents of a local error log (if one exists). This diagnostic file does not include your PIN, App Lock credentials, or your financial data (expenses, income, budgets, accounts, transfers, or goals).</li>
+          <li>The App creates a diagnostic file on your device containing: the App name and version, your device's operating system name and version, the App's internal database schema version, a count of your app settings, any description or reproduction steps you type, and the contents of a local error log (if one exists). The diagnostic file does not include your PIN, App Lock credentials, profile names, or your financial records from the App's database (expenses, income, budgets, accounts, transfers, or goals). The local error log, however, records technical error messages and stack traces from problems the App encountered. These are technical in nature, but we cannot guarantee that an error message never contains a fragment of the data being processed when the error occurred (for example, an amount or a note). The error log stays on your device, is not cleared automatically, and is removed when you clear the App's storage or uninstall the App.</li>
           <li>The App then opens your device's standard share sheet so you can choose where to send this information (for example, your email app addressed to aksoft.support@gmail.com). AKMoney itself does not transmit this information anywhere — the choice of destination and the act of sending is entirely yours.</li>
         </ul>
         <p>We do not store or retain a copy of any support request or feedback you send us outside of your own device and whatever inbox or service you choose to send it to.</p>
@@ -678,7 +682,7 @@
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
           App Lock and Security
         </h2>
-        <p>If you enable App Lock, your App Lock PIN is stored using Android's secure Keystore-backed storage. Your PIN is never transmitted off your device, is not included in backup files (see Section 11), and there is no PIN-recovery mechanism that sends information anywhere. If you enable biometric unlock, biometric matching is performed entirely by your device's operating system — AKMoney never receives or stores your biometric data.</p>
+        <p>If you enable App Lock, your App Lock PIN is stored using your device's secure storage. Your PIN is never transmitted off your device, is not included in backup files (see Section 11), and there is no PIN-recovery mechanism that sends information anywhere. App Lock controls access to the App; it does not encrypt your files, and your PIN is not used as the password for your data or your backups. If you enable biometric unlock, biometric matching is performed entirely by your device's operating system — AKMoney never receives or stores your biometric data.</p>
       </section>
 
       <section id="backups-and-restore">
@@ -687,17 +691,19 @@
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/></svg>
           Backups and Restore
         </h2>
-        <p><strong>Manual (Portable) Backup.</strong> AKMoney lets you export a backup of your financial data — including your expenses, income, budgets, accounts, transfers, goals, and app preferences, as well as the actual bytes of any receipt images you have attached to transactions. You choose to export this backup yourself; AKMoney does not export or upload it automatically.</p>
-        <p>When you export a backup, you set a password to protect it. The backup is saved as a password-protected, encrypted file. The Android file picker is used to let you choose where to save it — for example, to local device storage or to a cloud-storage provider such as Google Drive. AKMoney does not control or operate that storage provider and does not receive your cloud-storage credentials. AKMoney does not automatically upload your backup to any AKSoft Apps server.</p>
-        <p>Your App Lock PIN is never included in a backup. If you restore a backup onto a device that does not already have an App Lock PIN set up, App Lock will be left off rather than restored in a state that could lock you out.</p>
-        <p>To restore a backup, you select the backup file through the device's file picker and enter the password you set when you exported it. AKMoney does not receive or store your cloud-storage credentials if you pick a file stored in a cloud service.</p>
-        <p><strong>Automatic Backup.</strong> If you enable the Automatic Backup feature, AKMoney creates one encrypted backup per calendar day and keeps the three most recent backups. These automatic backups are stored entirely in the App's private on-device storage — they are not shared with any external storage, cloud service, or AKSoft Apps server. The automatic backup key is tied to your specific app installation; automatic backups cannot be transferred to another device or restored after reinstalling the App. For portable, transferable backups, use the Manual (Portable) Backup described above.</p>
+        <p><strong>Manual (Portable) Backup.</strong> AKMoney lets you export a backup of the profile you are using — including that profile's expenses, income, budgets, accounts, transfers, goals, recurring expenses, categories, templates, Financial Journey progress, and profile settings (such as its currency), as well as the actual bytes of any receipt images attached to its transactions. The backup also records the profile's name and built-in avatar choice. It does not include app-wide settings (theme, reminders, display name, Dashboard layout, or App Lock) or a custom profile photo. You choose to export this backup yourself; AKMoney does not export or upload it automatically.</p>
+        <p>When you export a backup, you set a password to protect it. The backup is saved as a password-protected, encrypted file. The Android file picker is used to let you choose where to save it — for example, to local device storage or to a cloud-storage provider such as Google Drive. AKMoney does not control or operate that storage provider and does not receive your cloud-storage credentials. AKMoney does not automatically upload your backup to any AKSoft Apps server. AKMoney does not store the password you choose; if you forget it, the exported backup cannot be restored. The file name includes the profile's name (letters, numbers, and dashes only), which is visible wherever you save the file. Once you save or share the file outside AKMoney, it can be copied or moved to other devices, and where it ends up is your choice.</p>
+        <p>Your App Lock PIN is never included in a backup, and restoring a backup does not change your App Lock settings.</p>
+        <p><strong>Restore.</strong> To restore a backup, you select the backup file through the device's file picker and, for a password-protected export, enter the password you set when you exported it. AKMoney does not receive or store your cloud-storage credentials if you pick a file stored in a cloud service. A restore replaces the existing data in the profile you restore into; it does not merge the backup with existing data. You can restore into the current profile or, where your plan allows, create a new profile from the backup. Restoring never changes app-wide settings. The database is replaced in a single transaction, and receipt images are swapped in afterward, so make a backup of your current data before you restore.</p>
+        <p><strong>Automatic Backup.</strong> If you enable the Automatic Backup feature, AKMoney creates one encrypted backup per profile per calendar day and keeps the three most recent backups for each profile. These automatic backups are stored entirely in the App's private on-device storage — they are not shared with any external storage, cloud service, or AKSoft Apps server. They are protected by your device's secure storage rather than by a password you choose, and are intended to be restored on the same installation of AKMoney on this device. They are not portable, and they may no longer be restorable if you uninstall the App or the relevant secure storage on your device is reset or lost. Deleting a profile also deletes that profile's automatic backups. For portable, transferable backups, use the Manual (Portable) Backup described above.</p>
         <p>A backup may contain your financial information and receipt images. It does not contain your App Lock PIN.</p>
       </section>
 
       <section id="expense-attachments">
         <h2><span class="num">12</span> Expense Attachments</h2>
-        <p>If you attach a photo to an expense, the App copies that image into its private local storage on your device. Attachment images are not transmitted anywhere automatically and are only included in a backup file if you create one (see Section 11), which itself stays on your device unless you choose to move or share it yourself.</p>
+        <p>If you attach a photo to an expense, the App copies that image into its private local storage on your device. Attachment images are not transmitted anywhere automatically and are only included in a backup file if you create one (see Section 11), which itself stays on your device unless you choose to move or share it yourself. Attachment images are stored as separate files in the App's private storage and are not separately encrypted like the profile databases.</p>
+        <p>Deleting an expense removes the expense record; its attached image file may remain in the App's private storage until you remove the image from the expense, delete the profile, restore a backup into that profile, or clear the App's data.</p>
+        <p>If you choose a photo as a profile picture, the App keeps a processed copy in that profile's private storage. Profile photos are not included in backups.</p>
       </section>
 
       <section id="transaction-templates">
@@ -714,9 +720,9 @@
 
       <section id="reports-and-pdf-export">
         <h2><span class="num">15</span> Financial Reports and PDF Export</h2>
-        <p>AKMoney can generate summary financial reports as PDF files. Reports are produced entirely on your device from your locally stored financial information — no data is sent to any server during report generation. A generated report can include summary figures (total income, total expenses, net cash flow, per-category and per-source breakdowns, and individual transaction entries by date, account, category, and amount). Transaction notes and other free-form text are not included in generated reports.</p>
-        <p>AKMoney does not automatically upload reports. When you tap "Share / Save PDF," the App opens the Android share sheet, and the report is passed to whichever app or destination you select. The privacy practices of that destination apply from that point forward.</p>
-        <p>Generating reports may require loading fonts. Where your device is online, the App may request a font from Google Fonts to improve the appearance of the PDF; if that request fails or the device is offline, the App uses a built-in fallback font instead.</p>
+        <p>AKMoney can generate summary financial reports as PDF files. Reports are produced entirely on your device from your locally stored financial information — no financial data is sent to any server during report generation. A generated report can include summary figures (total income, total expenses, net cash flow, per-category and per-source breakdowns, and individual transaction entries by date, account, category, and amount). A report shows the name of the profile it was generated from. Transaction notes and other free-form text are not included in generated reports.</p>
+        <p>AKMoney does not automatically upload reports. When you tap "Share / Save PDF," the App opens the Android share sheet, and the report is passed to whichever app or destination you select. A report is an ordinary PDF file; it is not encrypted, and the privacy practices of the destination you choose apply from that point forward.</p>
+        <p>Generating reports may require loading fonts. Where your device is online, the App may request a font from Google Fonts to improve the appearance of the PDF. This request is made to Google and does not contain your financial data; Google receives the standard technical information that accompanies such a request, such as your device's IP address. If that request fails or the device is offline, the App uses a built-in fallback font instead.</p>
       </section>
 
       <section id="milestone-sharing">
@@ -733,12 +739,14 @@
 
       <section id="purchases">
         <h2><span class="num">18</span> Purchases / Google Play Billing</h2>
-        <p>AKMoney may offer optional Premium features through Google Play Billing. If and when purchases are available, Google Play processes the transaction — including your purchase information such as purchase status and product ID — in accordance with Google's own privacy policy. AKMoney does not process, receive, or store your payment card number or other payment credentials — these are handled entirely by Google Play. AKMoney only reads back your purchase entitlement status (for example, whether Premium is active) to unlock the corresponding features.</p>
+        <p>AKMoney includes optional Premium features that use Google Play Billing. Purchasing is not currently available in the App (it is shown as "Coming Soon"). While the App runs, it uses Google Play's billing service on your device to check whether the Premium product is available and what your purchase status is; this request identifies the Premium product and is handled by Google Play under Google's own privacy policy, and it does not include your financial data. If and when purchases are available, Google Play processes the transaction — including your purchase information such as purchase status and product ID — in accordance with Google's own privacy policy. AKMoney does not process, receive, or store your payment card number or other payment credentials — these are handled entirely by Google Play. AKMoney only reads back your purchase entitlement status (for example, whether Premium is active) to unlock the corresponding features.</p>
       </section>
 
       <section id="data-retention-and-deletion">
         <h2><span class="num">19</span> Data Retention and Deletion</h2>
-        <p>Because your data is stored locally on your device, you control its retention. You can delete individual records within the App, or remove all App data by clearing the App's storage or uninstalling the App from your device. Backup files you have created yourself are also stored locally and are subject to your own device's file management.</p>
+        <p>Because your data is stored locally on your device, you control its retention. You can delete individual records within the App, or remove all App data by clearing the App's storage or uninstalling the App from your device. Deleting a record removes it from the App's database; see Section 12 for what can remain of an attached image.</p>
+        <p>You can delete a profile you created. Deleting a profile removes that profile's financial data, its receipt images and profile photo, and its Automatic Backups and their status information from the App's storage. If the removal is interrupted, the App completes it the next time it starts. Your original profile cannot be deleted. Deleting a profile does not delete backup files or reports that you exported or shared yourself, or entries in the local error log (Section 7).</p>
+        <p>Backup files you have created yourself are stored wherever you saved them and are subject to your own device's or storage provider's file management.</p>
       </section>
 
       <section id="childrens-privacy">
@@ -752,7 +760,7 @@
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/></svg>
           Security
         </h2>
-        <p>Your data is protected by your device's own operating system security and storage protections, and, where you choose to enable it, by App Lock (PIN and/or biometric authentication) as described in Section 10. Because AKMoney does not transmit your data off your device in the course of normal operation, your financial information is not exposed to network-based risks arising from our systems, as we operate none.</p>
+        <p>Your data is protected by your device's own operating system security and storage protections, by the encryption of each profile's financial database on your device, and, where you choose to enable it, by App Lock (PIN and/or biometric authentication) as described in Section 10. Receipt images and profile photos are stored as separate files that are not separately encrypted. Automatic backups are encrypted with protection tied to this device, and exported backups are encrypted with the password you choose (Section 11). Because AKMoney does not transmit your data off your device in the course of normal operation, your financial information is not exposed to network-based risks arising from our systems, as we operate none.</p>
       </section>
 
       <section id="legal-disclosure">
@@ -790,7 +798,7 @@
       <span class="sep">&middot;</span>
       <a href="mailto:aksoft.support@gmail.com">aksoft.support@gmail.com</a>
     </div>
-    <div class="footer-updated">Last Updated: September 23, 2026</div>
+    <div class="footer-updated">Last Updated: September 26, 2026</div>
   </div>
 </footer>
 
