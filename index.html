@@ -4,629 +4,324 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AKMoney Privacy Policy | Budget &amp; Expense Tracker — AKSoft Apps</title>
-<meta name="description" content="Privacy Policy for AKMoney, a local-first Budget &amp; Expense Tracker by AKSoft Apps. No automatic data collection by AKSoft Apps, no analytics, no advertising.">
-<meta name="theme-color" content="#0b1220">
+<meta name="description" content="Privacy Policy for AKMoney, a local-first Budget &amp; Expense Tracker by AKSoft Apps. Your financial records are stored on your device; optional features that use a network are described in full.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="akmoney-mark.png">
 <style>
   :root {
-    --navy: #0b1220;
-    --navy-2: #121b2e;
-    --teal: #14b8a6;
-    --teal-dark: #0d9488;
-    --ink: #1a2233;
-    --muted: #5b6472;
-    --bg: #f5f7fa;
-    --card: #ffffff;
-    --border: #e5e9f0;
+    --forest: #0b3a33;
+    --ivory: #ffffff;
+    --paper: #ffffff;
+    --ink: #1c2321;
+    --muted: #55605c;
+    --faint: #5f6965;
+    --line: #e3e5e3;
+    --link: #0b5a4e;
+    --brass: #7a5f1d;
+    --on-forest: #1c2321;
+    --on-forest-muted: #55605c;
+    --display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   }
 
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; animation: none !important; } }
 
-  html { scroll-behavior: smooth; }
-
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
+  body {
+    margin: 0; background: var(--ivory); color: var(--ink);
+    font-family: var(--body); font-size: 1rem; line-height: 1.7;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* ---------- Accessibility helpers ---------- */
+  a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid #1a73a8; outline-offset: 3px; border-radius: 3px; }
+  main:focus { outline: none; }
 
   .skip-link {
-    position: absolute;
-    left: 12px;
-    top: -60px;
-    background: var(--teal-dark);
-    color: #ffffff;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 14px;
-    z-index: 100;
-    transition: top 0.15s ease;
+    position: absolute; left: 12px; top: -80px; z-index: 100;
+    background: var(--paper); color: var(--forest); font-weight: 600;
+    padding: 10px 16px; border-radius: 4px; border: 1px solid var(--forest);
+  }
+  .skip-link:focus { top: 12px; }
+
+  /* ---------- Header + hero (one forest band) ---------- */
+  .masthead { background: #fff; color: var(--on-forest); }
+  .masthead a { color: inherit; }
+  
+  .bar {
+    max-width: 1120px; margin: 0 auto; padding: 18px 32px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
+  .brand-mark { width: 36px; height: 36px; border-radius: 9px; display: block; flex-shrink: 0; }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+  .brand-name { font-family: var(--display); font-size: 1.25rem; font-weight: 600; letter-spacing: 0.01em; color: var(--forest); }
+  .brand-sub { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-forest-muted); }
+  .contact-link {
+    font-size: 0.875rem; font-weight: 500; text-decoration: none; white-space: nowrap;
+    padding: 8px 14px; border: 1px solid var(--forest); border-radius: 4px; color: var(--forest);
+  }
+  .contact-link:hover { background: #eef4f2; }
+
+  .hero { max-width: 1120px; margin: 0 auto; padding: 72px 32px 80px; }
+  .eyebrow {
+    margin: 0 0 20px; display: flex; align-items: center; gap: 12px;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--brass);
+  }
+  .eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--brass); }
+  .hero h1 { color: var(--forest);
+    margin: 0 0 24px; max-width: 16ch; font-family: var(--display); font-weight: 500;
+    font-size: clamp(2.25rem, 6vw, 4rem); line-height: 1.06; letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  .hero .lede { margin: 0; max-width: 54ch; font-size: 1.125rem; line-height: 1.6; color: var(--on-forest-muted); }
+  .hero .meta { margin: 32px 0 0; font-size: 0.8125rem; letter-spacing: 0.04em; color: var(--on-forest-muted); }
+  .hero .meta time { color: var(--ink); }
+
+  /* ---------- Principles ---------- */
+  .principles { max-width: 1120px; margin: 0 auto; padding: 64px 32px 56px; }
+  .principles-head { display: grid; gap: 8px; margin-bottom: 36px; }
+  .principles h2 { margin: 0; font-family: var(--display); font-weight: 500; font-size: clamp(1.75rem, 3.5vw, 2.25rem); letter-spacing: -0.01em; line-height: 1.15; }
+  .principles .sub { margin: 0; max-width: 60ch; color: var(--muted); }
+  .principles ol {
+    list-style: none; margin: 0; padding: 0; counter-reset: pr;
+    display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--ink);
+  }
+  .principles li {
+    counter-increment: pr; position: relative; padding: 22px 0 22px 52px;
+    border-bottom: 1px solid var(--line);
+  }
+  .principles li::before {
+    content: counter(pr, decimal-leading-zero); position: absolute; left: 0; top: 22px;
+    font-family: var(--display); font-size: 1.125rem; color: var(--brass); font-variant-numeric: tabular-nums;
+  }
+  .principles li strong { display: block; font-family: var(--display); font-size: 1.1875rem; font-weight: 600; line-height: 1.3; margin-bottom: 4px; }
+  .principles li span { display: block; color: var(--muted); font-size: 0.96875rem; line-height: 1.6; }
+  @media (min-width: 820px) {
+    .principles ol { grid-template-columns: 1fr 1fr; column-gap: 56px; }
   }
 
-  .skip-link:focus {
-    top: 12px;
-  }
-
-  a:focus-visible,
-  summary:focus-visible,
-  details > summary:focus {
-    outline: 2px solid var(--teal);
-    outline-offset: 3px;
-    border-radius: 4px;
-  }
-
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  /* ---------- Header / hero ---------- */
-
-  header.hero {
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 60%, #0f1a2d 100%);
-    color: #ffffff;
-    padding: 64px 20px 88px;
-    text-align: center;
-  }
-
-  header.hero .lines {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.5;
-    background-image: repeating-linear-gradient(
-      115deg,
-      rgba(20, 184, 166, 0.07) 0px,
-      rgba(20, 184, 166, 0.07) 1px,
-      transparent 1px,
-      transparent 72px
-    );
-  }
-
-  header.hero .glow {
-    position: absolute;
-    top: -140px;
-    left: 50%;
-    width: 560px;
-    height: 560px;
-    transform: translateX(-50%);
-    background: radial-gradient(circle, rgba(20, 184, 166, 0.35) 0%, rgba(20, 184, 166, 0) 68%);
-    pointer-events: none;
-  }
-
-  header.hero .hero-inner {
-    position: relative;
-    z-index: 1;
-    max-width: 640px;
-    margin: 0 auto;
-  }
-
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 22px;
-  }
-
-  .brand-mark {
-    position: relative;
-    width: 52px;
-    height: 52px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, var(--teal) 0%, #0f766e 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    flex-shrink: 0;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08) inset, 0 10px 24px rgba(13, 148, 136, 0.35);
-  }
-
-  .brand-mark::after {
-    content: "";
-    position: absolute;
-    inset: -10px;
-    border-radius: 20px;
-    border: 1px solid rgba(20, 184, 166, 0.35);
-  }
-
-  .brand-name {
-    font-size: 27px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    text-align: left;
-  }
-
-  .brand-name span {
-    color: var(--teal);
-  }
-
-  .brand-tagline {
-    display: block;
-    margin-top: 2px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    color: #7fe0d3;
-    text-transform: uppercase;
-  }
-
-  header.hero h1 {
-    margin: 4px 0 10px;
-    font-size: 34px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-  }
-
-  header.hero p.tagline {
-    margin: 0;
-    color: #b7c0cf;
-    font-size: 15.5px;
-  }
-
-  header.hero p.updated {
-    margin: 22px 0 0;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(20, 184, 166, 0.14);
-    border: 1px solid rgba(20, 184, 166, 0.4);
-    color: #5eead4;
-    padding: 7px 18px;
-    border-radius: 999px;
-    font-size: 13px;
-    font-weight: 600;
-  }
-
-  header.hero p.updated svg {
-    width: 14px;
-    height: 14px;
-    flex-shrink: 0;
-  }
-
-  /* ---------- Layout ---------- */
-
+  /* ---------- Document layout ---------- */
   .wrap {
-    max-width: 1040px;
-    margin: -44px auto 0;
-    padding: 0 20px 72px;
-    position: relative;
-    z-index: 1;
+    max-width: 1120px; margin: 0 auto; padding: 48px 32px 96px;
+    display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px;
+  }
+  .rule { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+  .rule hr { border: 0; border-top: 1px solid var(--line); margin: 0; }
+  @media (min-width: 900px) {
+    .wrap { grid-template-columns: 260px minmax(0, 1fr); gap: 64px; }
   }
 
-  /* Privacy at a glance */
-
-  .glance {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 26px 26px 22px;
-    margin-bottom: 24px;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 10px 28px rgba(15, 23, 42, 0.06);
-  }
-
-  .glance h2 {
-    margin: 0 0 4px;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--teal-dark);
-  }
-
-  .glance p.sub {
-    margin: 0 0 18px;
-    color: var(--muted);
-    font-size: 14px;
-  }
-
-  .glance-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  @media (min-width: 640px) {
-    .glance-grid { grid-template-columns: repeat(4, 1fr); }
-  }
-
-  .glance-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 14px;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    background: #fafcfd;
-  }
-
-  .glance-item svg {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    color: var(--teal-dark);
-    margin-top: 1px;
-  }
-
-  .glance-item span {
-    font-size: 13.5px;
-    font-weight: 600;
-    color: var(--navy);
-    line-height: 1.35;
-  }
-
-  /* Page layout: nav + content */
-
-  .layout {
-    display: block;
-  }
-
-  @media (min-width: 960px) {
-    .layout {
-      display: grid;
-      grid-template-columns: 236px 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-  }
-
-  nav.toc {
-    margin-bottom: 24px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 18px 20px;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
-  }
-
-  @media (min-width: 960px) {
-    nav.toc {
-      position: sticky;
-      top: 20px;
-      margin-bottom: 0;
-    }
-  }
-
+  nav.toc { font-size: 0.875rem; }
   nav.toc summary {
-    cursor: pointer;
-    font-size: 12.5px;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--navy);
-    list-style: none;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--faint); cursor: pointer; list-style: none; padding: 12px 0;
+    display: flex; justify-content: space-between; align-items: center;
   }
-
   nav.toc summary::-webkit-details-marker { display: none; }
-
-  nav.toc summary::before {
-    content: "▸";
-    display: inline-block;
-    margin-right: 8px;
-    color: var(--teal-dark);
-    transition: transform 0.15s ease;
-  }
-
-  nav.toc details[open] summary::before {
-    transform: rotate(90deg);
-  }
-
-  nav.toc ol {
-    list-style: none;
-    margin: 14px 0 0;
-    padding: 0;
-    counter-reset: toc;
-  }
-
-  nav.toc li {
-    margin-bottom: 2px;
-  }
-
+  nav.toc summary::after { content: "Show"; letter-spacing: 0.02em; text-transform: none; color: var(--link); font-weight: 500; }
+  nav.toc details[open] summary::after { content: "Hide"; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
   nav.toc a {
-    display: block;
-    padding: 6px 8px;
-    margin: 0 -8px;
-    border-radius: 8px;
-    color: var(--muted);
-    text-decoration: none;
-    font-size: 13.5px;
-    font-weight: 500;
+    display: block; padding: 5px 0 5px 14px; margin-left: -1px; border-left: 2px solid transparent;
+    color: var(--muted); text-decoration: none; line-height: 1.4;
   }
-
-  nav.toc a:hover {
-    background: #f1f5f7;
-    color: var(--teal-dark);
+  nav.toc a:hover { color: var(--forest); border-left-color: var(--faint); }
+  nav.toc a[aria-current="location"] { color: var(--forest); font-weight: 650; border-left-color: var(--forest); }
+  nav.toc .n { display: inline-block; min-width: 2em; color: var(--faint); font-variant-numeric: tabular-nums; }
+  @media (min-width: 900px) {
+    nav.toc { position: sticky; top: 24px; align-self: start; max-height: calc(100vh - 48px); overflow-y: auto; padding-right: 8px; }
+    nav.toc summary { cursor: default; pointer-events: none; }
+    nav.toc summary::after { content: none !important; }
   }
-
-  /* Policy content */
-
-  .policy {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 32px 32px 10px;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 10px 28px rgba(15, 23, 42, 0.06);
+  @media (max-width: 899px) {
+    nav.toc { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); }
+    nav.toc details[open] ol { columns: 2; column-gap: 24px; margin-bottom: 12px; }
+    nav.toc li { break-inside: avoid; }
   }
+  @media (max-width: 560px) { nav.toc details[open] ol { columns: 1; } }
 
-  .policy section {
-    padding-bottom: 26px;
-    scroll-margin-top: 20px;
+  /* ---------- Policy ---------- */
+  .policy { max-width: 68ch; min-width: 0; overflow-wrap: break-word; }
+  .group-label {
+    margin: 56px 0 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--brass); display: flex; align-items: center; gap: 12px;
   }
-
-  .policy section + section {
-    border-top: 1px solid var(--border);
-    padding-top: 26px;
-  }
-
+  .group-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .group-label:first-child { margin-top: 0; }
+  .policy section { padding: 36px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
   .policy h2 {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--navy);
-    margin: 0 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); align-items: baseline;
+    margin: 0 0 16px; font-family: var(--display); font-weight: 500;
+    font-size: clamp(1.4rem, 2.6vw, 1.75rem); line-height: 1.22; letter-spacing: -0.01em; text-wrap: balance;
   }
-
-  .policy h2 .num {
-    flex-shrink: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 9px;
-    background: #ecfdf5;
-    border: 1px solid #a7f3d0;
-    color: var(--teal-dark);
-    font-size: 13px;
-    font-weight: 800;
+  .policy h2 .num { font-family: var(--display); font-size: 1rem; font-style: italic; color: var(--faint); font-variant-numeric: tabular-nums; }
+  .policy p { margin: 0 0 16px; }
+  .policy ul { margin: 0 0 16px; padding-left: 1.25rem; }
+  .policy li { margin-bottom: 8px; padding-left: 4px; }
+  .policy li::marker { color: var(--brass); }
+  .policy h3 { margin: 28px 0 8px; font-size: 0.8125rem; font-weight: 650; letter-spacing: 0.1em; text-transform: uppercase; color: var(--forest); }
+  .policy strong { font-weight: 650; color: var(--ink); }
+  .policy code {
+    font-family: "SF Mono", "Cascadia Mono", Consolas, monospace; font-size: 0.875em;
+    background: #f1f3f1; border-radius: 3px; padding: 1px 5px;
   }
-
-  .policy h2 .icon {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    color: var(--teal-dark);
-    opacity: 0.85;
-  }
-
-  .policy p {
-    margin: 0 0 12px;
-    color: var(--ink);
-    font-size: 15.5px;
-    max-width: 68ch;
-  }
-
-  .policy ul {
-    margin: 0 0 12px;
-    padding-left: 22px;
-    max-width: 68ch;
-  }
-
-  .policy li {
-    margin-bottom: 9px;
-    font-size: 15.5px;
-  }
-
-  strong { color: var(--navy); }
-
-  a {
-    color: var(--teal-dark);
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  a:hover { text-decoration: underline; }
+  .policy section:target h2 .num { color: var(--forest); font-weight: 700; font-style: normal; }
 
   /* ---------- Footer ---------- */
-
-  footer.site-footer {
-    background: var(--navy);
-    color: #b7c0cf;
-    padding: 40px 20px 32px;
-  }
-
+  footer.site-footer { background: #fff; color: var(--on-forest); border-top: 1px solid var(--line); }
+  footer.site-footer a { color: var(--link); }
   .footer-inner {
-    max-width: 1040px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 1120px; margin: 0 auto; padding: 40px 32px;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px;
   }
-
-  .footer-brand {
-    font-size: 17px;
-    font-weight: 800;
-    color: #ffffff;
-    letter-spacing: -0.01em;
-  }
-
-  .footer-brand span { color: var(--teal); }
-
-  .footer-meta {
-    margin-top: 6px;
-    font-size: 13.5px;
-    color: #8b93a3;
-  }
-
-  .footer-links {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 18px;
-    font-size: 13.5px;
-  }
-
-  .footer-links a {
-    color: #9fd9d0;
-    font-weight: 600;
-  }
-
-  .footer-links span.sep {
-    color: #3a4356;
-  }
-
-  .footer-updated {
-    margin-top: 18px;
-    font-size: 12.5px;
-    color: #6b7383;
-  }
-
-  /* ---------- Responsive ---------- */
+  .footer-inner .brand-name { font-size: 1.125rem; }
+  .footer-meta { margin: 0; font-size: 0.8125rem; color: var(--on-forest-muted); }
+  .footer-inner ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.875rem; }
 
   @media (max-width: 640px) {
-    header.hero { padding: 48px 16px 72px; }
-    header.hero h1 { font-size: 26px; }
-    .brand-name { font-size: 23px; }
-    .wrap { margin-top: -36px; }
-    .glance { padding: 20px 18px 18px; border-radius: 14px; }
-    .policy { padding: 22px 18px 6px; border-radius: 14px; }
-    .policy h2 { font-size: 16.5px; }
+    .bar, .hero, .principles, .wrap, .rule, .footer-inner { padding-left: 20px; padding-right: 20px; }
+    .bar { padding-top: 14px; padding-bottom: 14px; }
+    .hero { padding-top: 48px; padding-bottom: 56px; }
+    .principles { padding-top: 48px; padding-bottom: 40px; }
+    .principles li { padding-left: 44px; }
+    .policy section { padding: 28px 0; }
+    .policy h2 { grid-template-columns: 2rem minmax(0, 1fr); }
+    .brand-sub { display: none; }
   }
 
-  @media (max-width: 420px) {
-    .footer-links { flex-direction: column; gap: 8px; }
-    .footer-links span.sep { display: none; }
+  @media print {
+    @page { margin: 18mm 16mm; }
+    body { background: #fff; color: #000; font-size: 11pt; line-height: 1.5; }
+    .skip-link, nav.toc, .contact-link, .rule { display: none !important; }
+    .masthead, footer.site-footer { background: #fff; color: #000; }
+    .bar { border-bottom: 1px solid #999; padding: 0 0 8pt; }
+    .brand-sub, .hero .lede, .hero .meta, .hero .meta time, .eyebrow, .footer-meta { color: #333; }
+    .eyebrow::before { background: #333; }
+    .hero { padding: 24pt 0 16pt; }
+    .hero h1 { color: var(--forest); font-size: 26pt; max-width: none; }
+    .principles { padding: 12pt 0; }
+    .principles li { break-inside: avoid; }
+    .wrap { display: block; padding: 0; }
+    .policy { max-width: none; }
+    .policy section { padding: 12pt 0; }
+    .policy h2, .policy h3, .group-label { break-after: avoid; }
+    .policy p, .policy li { orphans: 3; widows: 3; }
+    a { color: inherit; text-decoration: none; }
+    .footer-inner { padding: 12pt 0 0; border-top: 1px solid #999; }
+    footer.site-footer a { color: #000; }
   }
 </style>
 </head>
 <body>
 
-<a class="skip-link" href="#content">Skip to Privacy Policy content</a>
+<a class="skip-link" href="#content">Skip to the policy</a>
 
-<header class="hero">
-  <div class="lines" aria-hidden="true"></div>
-  <div class="glow" aria-hidden="true"></div>
-  <div class="hero-inner">
-    <div class="brand">
-      <div class="brand-mark" aria-hidden="true">AK</div>
-      <div>
-        <div class="brand-name">AK<span>Money</span></div>
-        <span class="brand-tagline">Budget &bull; Track &bull; Plan &bull; Grow</span>
-      </div>
-    </div>
-    <h1>Privacy Policy</h1>
-    <p class="tagline">AKMoney — Budget &amp; Expense Tracker</p>
-    <p class="updated">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-      Last Updated: October 9, 2026
-    </p>
+<header class="masthead" id="top">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="AKMoney privacy policy, top of page">
+      <img class="brand-mark" src="akmoney-mark.png" width="36" height="36" alt="">
+      <span class="brand-text"><span class="brand-name">AKMoney</span><span class="brand-sub">by AKSoft Apps</span></span>
+    </a>
+    <a class="contact-link" href="mailto:aksoft.support@gmail.com">Contact</a>
+  </div>
+  <div class="hero">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>How AKMoney handles your information</h1>
+    <p class="lede">AKMoney — Budget &amp; Expense Tracker is a local-first app. Your financial records are kept on your device. This policy describes what the app does, including the optional features that use a network.</p>
+    <p class="meta">Last updated <time datetime="2026-10-10">October 10, 2026</time></p>
   </div>
 </header>
 
-<div class="wrap">
+<main id="content" tabindex="-1">
 
-  <section class="glance" aria-labelledby="glance-heading">
-    <h2 id="glance-heading">Privacy at a glance</h2>
-    <p class="sub">A quick summary of how AKMoney is built. Full detail follows below.</p>
-    <div class="glance-grid">
-      <div class="glance-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg>
-        <span>No automatic data collection by AKSoft Apps</span>
-      </div>
-      <div class="glance-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V9M12 19V5M20 19v-7"/><path d="M3 19h18"/><path d="M3.5 3.5l17 17"/></svg>
-        <span>No analytics</span>
-      </div>
-      <div class="glance-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/><path d="M4 4l16 16"/></svg>
-        <span>No advertising</span>
-      </div>
-      <div class="glance-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
-        <span>Local-first storage</span>
-      </div>
+  <section class="principles" aria-labelledby="principles-heading">
+    <div class="principles-head">
+      <h2 id="principles-heading">Key principles</h2>
+      <p class="sub">A plain-language summary. The numbered sections below are the full policy and take precedence.</p>
     </div>
+    <ol>
+      <li><strong>Your records stay on your device.</strong> <span>Transactions, accounts, budgets, goals and receipts are stored in the app's private storage. AKMoney has no accounts, and no AKSoft Apps server receives them.</span></li>
+      <li><strong>Nothing is sent to us automatically.</strong> <span>AKMoney does not automatically transmit your financial records to AKSoft Apps. We may receive information you choose to send us, such as support requests, feedback, or diagnostic reports.</span></li>
+      <li><strong>No analytics, advertising or crash-reporting services.</strong> <span>The app contains none. Technical errors are written to a local log on your device.</span></li>
+      <li><strong>You decide what you share.</strong> <span>Backups, reports, exports, diagnostic reports and milestone cards go only where you send them.</span></li>
+      <li><strong>Optional features use a network.</strong> <span>Google Drive backup (Premium) sends an encrypted file to your own Google Drive. PC Access (Premium) serves data over your local Wi-Fi to a computer you approve. Voice entry uses your device's speech-recognition service, which may process audio outside the app.</span></li>
+      <li><strong>Some technical requests go to Google.</strong> <span>The app checks Google Play for your Premium status and, when you ask, for app updates. These contain no financial data, but Google receives standard connection information such as your IP address.</span></li>
+    </ol>
   </section>
 
-  <div class="layout">
+  <div class="rule"><hr></div>
+
+  <div class="wrap">
 
     <nav class="toc" aria-label="Table of contents">
       <details open>
-        <summary>On this page</summary>
+        <summary>Contents</summary>
         <ol>
-          <li><a href="#introduction">1. Introduction</a></li>
-          <li><a href="#information-we-collect">2. Information We Collect</a></li>
-          <li><a href="#information-stored-locally">3. Information Stored Locally</a></li>
-          <li><a href="#how-we-use-information">4. How We Use Information</a></li>
-          <li><a href="#data-sharing-and-disclosure">5. Data Sharing and Disclosure</a></li>
-          <li><a href="#third-party-services">6. Third-Party Services</a></li>
-          <li><a href="#user-initiated-sharing">7. User-Initiated Sharing / Support Requests</a></li>
-          <li><a href="#natural-language-and-voice-entry">8. Natural Language &amp; Voice Transaction Entry</a></li>
-          <li><a href="#financial-journey">9. Financial Journey (XP, Streaks, Achievements)</a></li>
-          <li><a href="#app-lock-and-security">10. App Lock and Security</a></li>
-          <li><a href="#backups-and-restore">11. Backups and Restore</a></li>
-          <li><a href="#google-drive-backup">12. Google Drive Backup (Premium)</a></li>
-          <li><a href="#expense-attachments">13. Expense Attachments</a></li>
-          <li><a href="#transaction-templates">14. Transaction Templates</a></li>
-          <li><a href="#home-screen-widget">15. Home-Screen Widget</a></li>
-          <li><a href="#pc-access">16. PC Access / PC Manager (Premium)</a></li>
-          <li><a href="#reports-and-pdf-export">17. Financial Reports and PDF Export</a></li>
-          <li><a href="#milestone-sharing">18. Financial Journey Milestone Sharing</a></li>
-          <li><a href="#reminders">19. Reminders</a></li>
-          <li><a href="#purchases">20. Purchases / Google Play Billing</a></li>
-          <li><a href="#data-retention-and-deletion">21. Data Retention and Deletion</a></li>
-          <li><a href="#childrens-privacy">22. Children's Privacy</a></li>
-          <li><a href="#security">23. Security</a></li>
-          <li><a href="#legal-disclosure">24. Lawful Disclosure</a></li>
-          <li><a href="#business-changes">25. Business Changes</a></li>
-          <li><a href="#changes">26. Changes to This Privacy Policy</a></li>
-          <li><a href="#contact">27. Contact Us</a></li>
+          <li><a href="#introduction"><span class="n">1</span>Introduction</a></li>
+          <li><a href="#information-we-collect"><span class="n">2</span>Information We Collect</a></li>
+          <li><a href="#information-stored-locally"><span class="n">3</span>Information Stored Locally</a></li>
+          <li><a href="#how-we-use-information"><span class="n">4</span>How We Use Information</a></li>
+          <li><a href="#data-sharing-and-disclosure"><span class="n">5</span>Data Sharing and Disclosure</a></li>
+          <li><a href="#third-party-services"><span class="n">6</span>Third-Party Services</a></li>
+          <li><a href="#user-initiated-sharing"><span class="n">7</span>Support Requests and Diagnostics</a></li>
+          <li><a href="#natural-language-and-voice-entry"><span class="n">8</span>Typed and Voice Entry</a></li>
+          <li><a href="#financial-journey"><span class="n">9</span>Financial Journey</a></li>
+          <li><a href="#app-lock-and-security"><span class="n">10</span>App Lock and Security</a></li>
+          <li><a href="#backups-and-restore"><span class="n">11</span>Backups and Restore</a></li>
+          <li><a href="#google-drive-backup"><span class="n">12</span>Google Drive Backup</a></li>
+          <li><a href="#expense-attachments"><span class="n">13</span>Expense Attachments</a></li>
+          <li><a href="#transaction-templates"><span class="n">14</span>Transaction Templates</a></li>
+          <li><a href="#home-screen-widget"><span class="n">15</span>Home-Screen Widget</a></li>
+          <li><a href="#pc-access"><span class="n">16</span>PC Access / PC Manager</a></li>
+          <li><a href="#reports-and-pdf-export"><span class="n">17</span>Reports, Exports and Imports</a></li>
+          <li><a href="#milestone-sharing"><span class="n">18</span>Milestone Sharing</a></li>
+          <li><a href="#reminders"><span class="n">19</span>Reminders</a></li>
+          <li><a href="#purchases"><span class="n">20</span>Purchases / Google Play Billing</a></li>
+          <li><a href="#data-retention-and-deletion"><span class="n">21</span>Retention, Deletion and Your Choices</a></li>
+          <li><a href="#childrens-privacy"><span class="n">22</span>Children's Privacy</a></li>
+          <li><a href="#security"><span class="n">23</span>Security</a></li>
+          <li><a href="#legal-disclosure"><span class="n">24</span>Lawful Disclosure</a></li>
+          <li><a href="#business-changes"><span class="n">25</span>Business Changes</a></li>
+          <li><a href="#changes"><span class="n">26</span>Changes to This Policy</a></li>
+          <li><a href="#contact"><span class="n">27</span>Contact Us</a></li>
         </ol>
       </details>
     </nav>
 
-    <main id="content" class="policy" tabindex="-1">
+    <article class="policy" aria-label="Privacy Policy">
+
+    <p class="group-label">Overview</p>
 
       <section id="introduction">
-        <h2><span class="num">1</span> Introduction</h2>
-        <p>This Privacy Policy explains how AKMoney ("the App"), developed and published by AKSoft Apps ("we," "us," or "our"), handles information when you use the App. AKMoney is designed to keep your financial data on your device. The optional Google Drive backup and PC Access features (Sections 12 and 16) let you choose to send your data to your own Google Drive or to a computer you approve; AKSoft Apps does not receive it. This policy describes exactly what the App does, based on how it is actually built.</p>
+        <h2><span class="num">1</span>Introduction</h2>
+        <p>This Privacy Policy explains how AKMoney ("the App"), developed and published by AKSoft Apps ("we," "us," or "our"), handles information when you use the App. AKMoney is designed to keep your financial data on your device. The optional Google Drive backup and PC Access features (Sections 12 and 16) let you choose to send your data to your own Google Drive or to a computer you approve; AKSoft Apps does not receive it. This policy describes what the App does, based on how it is built.</p>
       </section>
 
       <section id="information-we-collect">
-        <h2><span class="num">2</span> Information We Collect</h2>
-        <p>AKMoney does not operate any backend server and does not send your financial data or personal information to us (AKSoft Apps). The App has no AKMoney accounts and no cloud synchronization. Two optional Premium features move data in the ways described in their own sections: Google Drive backup (Section 12) signs in to your Google account and uploads an encrypted backup to your own Google Drive, and PC Access (Section 16) serves your data over your local Wi-Fi network to a computer you approve.</p>
-        <p>The App does not use analytics, advertising, or crash-reporting services. Apart from those optional features, the only network requests the App makes on its own are technical ones that do not contain your financial data: contacting Google Play to check the optional Premium product and your purchase status (Section 20), and downloading a font from Google Fonts when a financial report PDF is generated (Section 17). Those requests are handled by Google, which receives the standard technical information that accompanies any such request, such as your device's IP address. If you set up Google Drive backup, Google likewise receives that technical information, your Google account details, and the encrypted backup file (Section 12).</p>
+        <h2><span class="num">2</span>Information We Collect</h2>
+        <p>AKMoney does not automatically transmit your financial records to AKSoft Apps. We may receive information you choose to send us, such as support requests, feedback, or diagnostic reports. The App has no AKMoney accounts and no cloud synchronization. Two optional Premium features move data in the ways described in their own sections: Google Drive backup (Section 12) signs in to your Google account and uploads an encrypted backup to your own Google Drive, and PC Access (Section 16) serves your data over your local Wi-Fi network to a computer you approve.</p>
+        <p>The App does not use analytics, advertising, or crash-reporting services. Apart from those optional features, the only network requests the App makes on its own are technical ones that do not contain your financial data: contacting Google Play to check the optional Premium product and your purchase status (Section 20), and, when you open Settings and choose to check for updates, asking Google Play whether a newer version is available (Section 6). Those requests are handled by Google, which receives the standard technical information that accompanies any such request, such as your device's IP address. If you set up Google Drive backup, Google likewise receives that technical information, your Google account details, and the encrypted backup file (Section 12).</p>
       </section>
 
+    <p class="group-label">Your data on your device</p>
+
       <section id="information-stored-locally">
-        <h2>
-          <span class="num">3</span>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
-          Information Stored Locally
-        </h2>
+        <h2><span class="num">3</span>Information Stored Locally</h2>
         <p>To provide its features, AKMoney stores the following information locally on your device, inside the App's private storage:</p>
         <ul>
-          <li>Expenses, income, budgets, category budgets, accounts, transfers, recurring transactions, and financial goals you create, kept separately in each profile you create</li>
+          <li>Expenses, income, budgets, category budgets, accounts, transfers, recurring transactions, fixed expense groups, tags, subcategories, and financial goals you create, kept separately in each profile you create</li>
           <li>Profiles: the name and avatar of each profile (a built-in avatar, or a photo you choose from your device). Each profile keeps its own accounts, transactions, budgets, goals, recurring expenses, categories, and receipts, and switching profiles does not mix them</li>
           <li>Receipt or attachment images you choose to add to an expense</li>
           <li>Transaction Templates you create (see Section 14)</li>
           <li>App preferences (such as theme and reminder settings, and the optional display name you enter for the greeting), and each profile's currency setting</li>
           <li>Your Financial Journey progress (experience points, level, current and best streak, and achievement/milestone status) — see Section 9</li>
-          <li>Your App Lock PIN, if you set one, stored using your device's secure storage (see Section 10)</li>
-          <li>A local error log of technical errors, if any occur (see Section 7)</li>
+          <li>Your App Lock PIN verifier, if you set a PIN, stored using your device's secure storage (see Section 10)</li>
+          <li>A local error log of technical errors, if any occur, and any diagnostic report files you generate (see Section 7)</li>
           <li>If you set up Google Drive backup: the email address of the linked Google account, the time and size of the last upload, error status, a fingerprint used to detect whether your data has changed, and the encryption key material for the backup, kept in your device's secure storage (see Section 12)</li>
           <li>If you use PC Access: the certificate and private key that PC Access uses for its local HTTPS connection and, if you turn on the optional authenticator code, its secret, kept in your device's secure storage (see Section 16)</li>
         </ul>
@@ -634,79 +329,87 @@
       </section>
 
       <section id="how-we-use-information">
-        <h2><span class="num">4</span> How We Use Information</h2>
+        <h2><span class="num">4</span>How We Use Information</h2>
         <p>All information described in Section 3 is used solely to provide the App's budgeting and expense-tracking features on your device (for example, calculating budgets, displaying transaction history, pre-filling transaction entry forms from your saved Templates, and generating the backup file described in Section 11, or, if you choose to use them, the optional Google Drive backup and PC Access features in Sections 12 and 16). We do not use this information for advertising, profiling, or any purpose beyond operating the App on your device.</p>
       </section>
 
+    <p class="group-label">Sharing and third parties</p>
+
       <section id="data-sharing-and-disclosure">
-        <h2><span class="num">5</span> Data Sharing and Disclosure</h2>
+        <h2><span class="num">5</span>Data Sharing and Disclosure</h2>
         <p>We do not sell your information. We do not share your financial data with any third party, except where you direct it to your own Google Drive or to a computer you approve through the optional Google Drive backup and PC Access features described below. AKMoney does not include any advertising SDK, analytics SDK, or crash-reporting SDK capable of automatically transmitting your data to us or anyone else.</p>
-        <p>The circumstances in which data may leave your device are all described in this policy and are limited to: actions you explicitly take to share information (Sections 7, 17, and 18); use of your device's speech-recognition service if you speak a transaction entry (Section 8); exporting or restoring a backup to a storage location you choose (Section 11); uploading an encrypted backup to your own Google Drive and restoring it, if you set up Google Drive backup (Section 12); serving your data over your local Wi-Fi network to a computer you have approved, if you use PC Access (Section 16); Google Play processing an in-app purchase if and when purchases are available (Section 20); and the technical Google Play and Google Fonts requests described in Section 2, which do not contain your financial data. In each of these cases the action is either initiated by you or handled by platform services that you or your device operator control. AKMoney does not itself send your data to AKSoft Apps (sharing a diagnostic report with us is something you do yourself through the share sheet, Section 7), and it does not push your data to any destination you have not set up: once you have set up and switched on Google Drive backup, encrypted uploads to your own Google Drive then run automatically, and you can switch them off or disconnect at any time (Section 12).</p>
+        <p>The main circumstances in which information may leave your device include:</p>
+        <ul>
+          <li>files and messages you choose to share or save, such as reports, exports, backups and milestone cards, through the Android share sheet or file picker (Sections 11, 17 and 18);</li>
+          <li>diagnostic reports, feedback and support correspondence that you choose to send us (Section 7);</li>
+          <li>use of your device's speech-recognition service if you speak a transaction entry (Section 8);</li>
+          <li>uploading an encrypted backup to your own Google Drive and restoring it, if you set up Google Drive backup (Section 12);</li>
+          <li>serving your data over your local Wi-Fi network to a computer you have approved, if you use PC Access (Section 16); and</li>
+          <li>Google Play billing and update requests, which do not contain your financial data (Sections 2, 6 and 20).</li>
+        </ul>
+        <p>AKMoney does not automatically transmit your financial records to AKSoft Apps. Information you send us yourself, such as a diagnostic report or support email (Section 7), reaches us only because you chose to send it. Once you have set up and switched on Google Drive backup, encrypted uploads to your own Google Drive run automatically, and you can switch them off or disconnect at any time (Section 12).</p>
       </section>
 
       <section id="third-party-services">
-        <h2><span class="num">6</span> Third-Party Services</h2>
+        <h2><span class="num">6</span>Third-Party Services</h2>
         <p>AKMoney relies on the following platform services to operate or to provide optional features:</p>
         <ul>
           <li><strong>Google Play Billing</strong> — to check the optional Premium product and your purchase status, and to process purchases if and when they become available (see Section 20). AKMoney does not receive your payment card details.</li>
-          <li><strong>Google Fonts</strong> — when a financial report PDF is generated while your device is online, the App may download a font file from Google (see Section 17). No financial data is sent in this request.</li>
+          <li><strong>Google Play update check</strong> — when you choose "Check for Updates" in Settings, the App asks Google Play whether a newer version is available. AKMoney downloads and installs nothing itself, and sends no financial data in this request.</li>
           <li><strong>Google Play Store listing</strong> — if you tap "Rate Us" in Settings, your device opens the App's Google Play page.</li>
-          <li><strong>Android operating-system share sheet</strong> — used only when you choose to share a diagnostic report, a financial report PDF, or a milestone card (see Sections 7, 17, and 18). AKMoney passes the content to the share sheet; the destination you pick determines which app or service receives it.</li>
+          <li><strong>Android operating-system share sheet</strong> — used when you choose to share a diagnostic report, feedback, a report or export file, or a milestone card (see Sections 7, 17, and 18). AKMoney passes the content to the share sheet; the destination you pick determines which app or service receives it.</li>
           <li><strong>Device speech-recognition service</strong> — used only when you tap the microphone button to speak a transaction entry (see Section 8). This service is provided by your device's operating system or the device manufacturer, not by AKMoney.</li>
-          <li><strong>User-selected file storage</strong> — when you use the Android file picker to save or restore a backup, you may choose a local folder or a cloud-storage provider such as Google Drive (see Section 11). AKMoney does not control that provider, does not receive your credentials for it, and does not upload backups to it automatically through this file-picker route. (The separate, optional Google Drive backup feature in Section 12 works differently.)</li>
+          <li><strong>User-selected file storage</strong> — when you use the Android file picker to save or restore a backup or export, you may choose a local folder or a cloud-storage provider such as Google Drive (see Sections 11 and 17). AKMoney does not control that provider, does not receive your credentials for it, and does not upload files to it automatically through this file-picker route. (The separate, optional Google Drive backup feature in Section 12 works differently.)</li>
           <li><strong>Google Sign-In and Google Drive</strong> — only if you set up the optional Premium Google Drive backup (see Section 12). You sign in with your Google account, and AKMoney uploads an encrypted backup to a private app-data area of your own Google Drive. Google handles your sign-in and stores the file under Google's own terms and privacy policy.</li>
         </ul>
         <p>AKMoney does not integrate any advertising network, analytics platform, or crash-reporting service.</p>
       </section>
 
       <section id="user-initiated-sharing">
-        <h2><span class="num">7</span> User-Initiated Sharing / Support Requests</h2>
+        <h2><span class="num">7</span>Support Requests and Diagnostics</h2>
         <p>The App includes optional "Report a Problem" and feedback features. These features do not send anything automatically. When you choose to use them:</p>
         <ul>
-          <li>The App creates a diagnostic file on your device containing: the App name and version, your device's operating system name and version, the App's internal database schema version, a count of your app settings, any description or reproduction steps you type, and the contents of a local error log (if one exists). The diagnostic file does not include your PIN, App Lock credentials, profile names, or your financial records from the App's database (expenses, income, budgets, accounts, transfers, or goals). The local error log, however, records technical error messages and stack traces from problems the App encountered. These are technical in nature, but we cannot guarantee that an error message never contains a fragment of the data being processed when the error occurred (for example, an amount or a note). The error log stays on your device. Entries older than 3 days are removed automatically, the log is kept to a limited size (the oldest entries are dropped first), and it is also removed when you clear the App's storage or uninstall the App.</li>
+          <li>The App creates a diagnostic file containing: the App name and version, your device's operating system name and version, the App's internal database schema version, a count of your app settings, any description or reproduction steps you type, and the contents of a local error log (if one exists). A copy of this file is also saved in the App's private storage on your device. The diagnostic file does not include your PIN, App Lock credentials, profile names, or your financial records from the App's database (expenses, income, budgets, accounts, transfers, or goals). Anything you type into the description or steps is included, so avoid typing sensitive information there.</li>
+          <li>The local error log records technical error messages and stack traces from problems the App encountered. These are technical in nature, but we cannot guarantee that an error message never contains a fragment of the data being processed when the error occurred (for example, an amount or a note). The error log stays on your device. Entries older than 3 days are removed automatically, the log is kept to a limited size (the oldest entries are dropped first), and it is also removed when you clear the App's storage or uninstall the App.</li>
           <li>The App then opens your device's standard share sheet so you can choose where to send this information (for example, your email app addressed to aksoft.support@gmail.com). AKMoney itself does not transmit this information anywhere — the choice of destination and the act of sending is entirely yours.</li>
+          <li>The feedback and feature-request options share only the message you type, in the same way.</li>
         </ul>
-        <p>We do not store or retain a copy of any support request or feedback you send us outside of your own device and whatever inbox or service you choose to send it to.</p>
+        <p>If you email us a report or request, we receive whatever you send, together with your email address and the other details your email service attaches. We use it to respond to you and to investigate the problem. AKMoney does not automatically transmit these reports; the local error log on your device and a diagnostic report you choose to send are separate things, and only the latter reaches us, and only if you send it. You can ask us to delete what you have sent (Section 21).</p>
       </section>
 
       <section id="natural-language-and-voice-entry">
-        <h2><span class="num">8</span> Natural Language &amp; Voice Transaction Entry</h2>
-        <p>AKMoney lets you type a plain-language sentence (for example, "spent 450 on dinner yesterday") to quickly log an expense or income entry. This text is parsed entirely on your device by code built into the App — it is not sent to any server, AI service, or third party. The parser extracts fields such as amount, date, account, category, or income source from your sentence and always shows you the result for review before anything is saved, so you can correct or confirm it first.</p>
-        <p>You may also speak your entry instead of typing it. Tapping the microphone button requests the Android <code>RECORD_AUDIO</code> permission and uses the device operating system's speech-to-text service (via the <code>speech_to_text</code> plugin) to convert your speech into text, which is placed into the same text field and parsed the same way as typed text.</p>
-        <p>AKMoney requests on-device speech recognition from the operating system where the device supports it, so that recognized speech is processed without a network round trip. Whether this request is honored, and whether any audio or transcript data is handled by the device manufacturer's or Android's own speech-recognition components outside the App, is controlled by your device's operating system and installed speech-recognition service, not by AKMoney. AKMoney itself does not transmit your voice recording or transcript to its own servers or to any third party — we do not operate any server to receive it. AKMoney does not record or retain audio after a listening session ends; only the resulting recognized text is placed into the entry field, subject to the same local storage described in Section 3 once you save the entry.</p>
+        <h2><span class="num">8</span>Typed and Voice Entry</h2>
+        <p>AKMoney lets you type a plain-language sentence (for example, "spent 450 on dinner yesterday") to quickly log an expense or income entry. This text is parsed on your device by code built into the App — it is not sent to any server, AI service, or third party by AKMoney. The parser extracts fields such as amount, date, account, category, or income source from your sentence and always shows you the result for review before anything is saved, so you can correct or confirm it first.</p>
+        <p>You may also speak your entry instead of typing it. Tapping the microphone button requests the Android <code>RECORD_AUDIO</code> permission and uses your device's speech-recognition service to convert your speech into text, which is placed into the same text field and parsed the same way as typed text.</p>
+        <p><strong>Where speech is processed.</strong> AKMoney asks the operating system to use on-device recognition. This is a request, not a guarantee: which recognition service runs, and whether your audio or the resulting text is processed on the device or sent to a server, is decided by your device's operating system and the speech-recognition service installed on it (for example one provided by Google or your device manufacturer). On some devices, audio may be processed by that service's servers, under the privacy policy of its provider. If you do not want this, use typed entry instead; you can also withhold the microphone permission.</p>
+        <p>AKMoney itself does not send your voice or transcript to AKSoft Apps or to any server of its own, and does not record or retain audio after a listening session ends. Only the recognized text is placed into the entry field, and it is stored locally (Section 3) only when you save the entry.</p>
       </section>
 
       <section id="financial-journey">
-        <h2><span class="num">9</span> Financial Journey (XP, Streaks, Achievements)</h2>
+        <h2><span class="num">9</span>Financial Journey</h2>
         <p>AKMoney includes an optional "Financial Journey" feature that tracks your consistency using experience points (XP), a level, your current and best day-streaks, and achievement/milestone badges (for example, a 90-day streak). These values are calculated from your own local activity (such as logging expenses or setting budgets) and stored locally on your device, in the same private App storage described in Section 3. They are not transmitted anywhere automatically, are not used for advertising or profiling, and are not shared with any third party.</p>
       </section>
 
+    <p class="group-label">Security, backups and connected features</p>
+
       <section id="app-lock-and-security">
-        <h2>
-          <span class="num">10</span>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-          App Lock and Security
-        </h2>
+        <h2><span class="num">10</span>App Lock and Security</h2>
         <p>If you enable App Lock, your App Lock PIN is stored using your device's secure storage. Your PIN is never transmitted off your device, is not included in backup files (see Section 11), and there is no PIN-recovery mechanism that sends information anywhere. App Lock controls access to the App; it does not encrypt your files, and your PIN is not used as the password for your data or your backups. If you enable biometric unlock, biometric matching is performed entirely by your device's operating system — AKMoney never receives or stores your biometric data. If App Lock is on, it is also used to authorize starting PC Access and approving a computer on your phone (Section 16).</p>
         <p><strong>Screen Protection.</strong> AKMoney has a Screen Protection setting that is on by default and is available to all users, not only Premium users. While it is on, Android blocks screenshots of AKMoney's window and hides AKMoney's preview in Android's Recent Apps screen (the preview is typically shown blank or black, depending on the device). AKMoney still appears in the Recent Apps list, and Screen Protection does not close the App. Screen recording or casting of the App may also be hidden. It applies only to AKMoney's own window: it does not affect files you export or share, notifications, the browser of a computer connected through PC Access (Section 16), or a physical camera. You can turn it off in Settings.</p>
       </section>
 
       <section id="backups-and-restore">
-        <h2>
-          <span class="num">11</span>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/></svg>
-          Backups and Restore
-        </h2>
+        <h2><span class="num">11</span>Backups and Restore</h2>
         <p><strong>Manual (Portable) Backup.</strong> AKMoney lets you export a backup of the profile you are using — including that profile's expenses, income, budgets, accounts, transfers, goals, recurring expenses, categories, templates, Financial Journey progress, and profile settings (such as its currency), as well as the actual bytes of any receipt images attached to its transactions. The backup also records the profile's name and built-in avatar choice. It does not include app-wide settings (theme, reminders, display name, Dashboard layout, or App Lock) or a custom profile photo. You choose to export this backup yourself; AKMoney does not export or upload it automatically.</p>
         <p>When you export a backup, you set a password to protect it. The backup is saved as a password-protected, encrypted file. The Android file picker is used to let you choose where to save it — for example, to local device storage or to a cloud-storage provider such as Google Drive. AKMoney does not control or operate that storage provider and does not receive your cloud-storage credentials. AKMoney does not automatically upload your backup to any AKSoft Apps server. AKMoney does not store the password you choose; if you forget it, the exported backup cannot be restored. The file name includes the profile's name (letters, numbers, and dashes only), which is visible wherever you save the file. Once you save or share the file outside AKMoney, it can be copied or moved to other devices, and where it ends up is your choice.</p>
         <p>Your App Lock PIN is never included in a backup, and restoring a backup does not change your App Lock settings.</p>
         <p><strong>Restore.</strong> To restore a backup, you select the backup file through the device's file picker and, for a password-protected export, enter the password you set when you exported it. AKMoney does not receive or store your cloud-storage credentials if you pick a file stored in a cloud service. A restore replaces the existing data in the profile you restore into; it does not merge the backup with existing data. You can restore into the current profile or, where your plan allows, create a new profile from the backup. Restoring never changes app-wide settings. The database is replaced in a single transaction, and receipt images are swapped in afterward, so make a backup of your current data before you restore.</p>
         <p><strong>Automatic Backup.</strong> If you enable the Automatic Backup feature, AKMoney creates one encrypted backup per profile per calendar day and keeps the three most recent backups for each profile. These automatic backups are stored entirely in the App's private on-device storage — they are not shared with any external storage, cloud service, or AKSoft Apps server by the Automatic Backup feature itself. (If you separately set up the optional Google Drive backup in Section 12, an upload of an encrypted copy of your data to your own Google Drive is attempted when you next open the App after a newer Automatic Backup exists, subject to the conditions in Section 12.) They are protected by your device's secure storage rather than by a password you choose, and are intended to be restored on the same installation of AKMoney on this device. They are not portable, and they may no longer be restorable if you uninstall the App or the relevant secure storage on your device is reset or lost. Deleting a profile also deletes that profile's automatic backups. For portable, transferable backups, use the Manual (Portable) Backup described above.</p>
-        <p>A backup may contain your financial information and receipt images. It does not contain your App Lock PIN.</p>
+        <p>A backup may contain your financial information and receipt images. It does not contain your App Lock PIN. The App is configured to exclude its data from Android's own cloud backup and device-to-device transfer.</p>
       </section>
 
       <section id="google-drive-backup">
-        <h2><span class="num">12</span> Google Drive Backup (Premium)</h2>
+        <h2><span class="num">12</span>Google Drive Backup (Premium)</h2>
         <p>AKMoney includes an optional Google Drive backup feature. It is a Premium feature. New Premium purchases are not currently available (the Premium screen shows "Coming Soon"; see Section 20), but the App continues to recognise a Premium entitlement that Google Play already shows as owned, for example one held by a participant in Google Play closed testing, and Google Drive backup and restore are available to that user. It is not available to anyone who does not already have that entitlement. The feature does nothing until you sign in with your Google account and set it up.</p>
         <ul>
           <li><strong>Sign-in and access.</strong> You sign in with your Google account through Google Sign-In. AKMoney requests only Google's Drive "app data" permission, which gives it access to a private folder reserved for AKMoney in your Google Drive, not to your other Drive files. One Google account can be linked per device.</li>
@@ -723,144 +426,172 @@
       </section>
 
       <section id="expense-attachments">
-        <h2><span class="num">13</span> Expense Attachments</h2>
+        <h2><span class="num">13</span>Expense Attachments</h2>
         <p>If you attach a photo to an expense, the App copies that image into its private local storage on your device. Attachment images are not transmitted anywhere automatically and are only included in a backup file if you create one (see Section 11), which itself stays on your device unless you choose to move or share it yourself. Attachment images are stored as separate files in the App's private storage and are not separately encrypted like the profile databases.</p>
         <p>Deleting an expense removes the expense record; its attached image file may remain in the App's private storage until you remove the image from the expense, delete the profile, restore a backup into that profile, or clear the App's data.</p>
         <p>If you choose a photo as a profile picture, the App keeps a processed copy in that profile's private storage. Profile photos are not included in backups.</p>
       </section>
 
       <section id="transaction-templates">
-        <h2><span class="num">14</span> Transaction Templates</h2>
+        <h2><span class="num">14</span>Transaction Templates</h2>
         <p>AKMoney lets you save Transaction Templates — reusable presets that pre-fill the transaction-entry form (for example, a "Morning Coffee" template that pre-selects a category and account). A template can store a name, transaction type (expense or income), an optional category or income source, an optional account, an optional amount, and an optional note.</p>
         <p>Templates are stored locally on your device in the App's private database. They are not automatically transmitted to AKSoft Apps or to any third party. When you save or edit a template, the change is written only to your local device storage. Templates are available only inside the App and are not shown on, or accessible from, the Android home-screen widget (see Section 15).</p>
       </section>
 
       <section id="home-screen-widget">
-        <h2><span class="num">15</span> Home-Screen Widget</h2>
+        <h2><span class="num">15</span>Home-Screen Widget</h2>
         <p>AKMoney offers an optional Android home-screen widget with exactly four fixed actions: Add Expense, Add Income, Add Transfer, and Open AKMoney. Tapping an action opens the App to the corresponding screen; the widget itself does not create, edit, or store any transaction.</p>
         <p>The widget does not display account balances, transaction amounts, account names, transaction history, Transaction Templates, or any other user-created or financial data — only the four fixed action icons described above. The widget does not transmit any information anywhere; it communicates with the App only through Android's standard widget update mechanism on your device.</p>
       </section>
 
       <section id="pc-access">
-        <h2><span class="num">16</span> PC Access / PC Manager (Premium)</h2>
+        <h2><span class="num">16</span>PC Access / PC Manager (Premium)</h2>
         <p>PC Access (shown in the App as "PC Manager") is an optional feature that lets you use AKMoney from the web browser of a computer you approve, while the phone and the computer are on the same permitted Wi-Fi network. It is a Premium feature. New Premium purchases are not currently available (the Premium screen shows "Coming Soon"; see Section 20), but PC Access works for a user whose Premium entitlement is already active, for example a participant in Google Play closed testing. It is off until you start it in the App, and you can stop it at any time.</p>
-        <p><strong>How it works and where data goes</strong></p>
+        <h3>How it works and where data goes</h3>
         <ul>
           <li>When you start PC Access, your phone runs a small local HTTPS server on its private Wi-Fi address. It accepts connections only from devices on that same Wi-Fi network. Cellular, VPN, and phone-hotspot network configurations are not supported.</li>
           <li>PC Access does not use an AKSoft cloud relay or backend. Data travels directly between your phone and the browser on your local network. Based on how PC Access is built, it does not automatically send PC Access data to AKSoft Apps' servers or to any third party. This statement is about PC Access only: the other ways data can leave your device, including Google Drive backup (Section 12), backups and files you export, and the items you choose to share, are described in their own sections.</li>
           <li>Any device on the same Wi-Fi network may be able to load the sign-in page and its supporting files. That page does not contain your financial records, and no financial information is available until a computer has been paired and approved.</li>
         </ul>
-        <p><strong>Pairing and approval</strong></p>
+        <h3>Pairing and approval</h3>
         <ul>
           <li>The phone shows a one-time pairing code that is valid for about two minutes. Each code allows a small number of wrong attempts, and repeated failures cause delays and then a lockout that you must clear on the phone.</li>
           <li>After a correct code, you must approve the computer on your phone. The phone and the browser show a matching confirmation number to help you check that you are approving the right request. If App Lock is on, approving (and starting PC Access) requires your App Lock PIN or biometrics. If you have turned on the optional authenticator code, it is also required.</li>
           <li>Only one computer can be connected at a time. Pairing is not remembered: every time you start PC Access, a new pairing is needed.</li>
         </ul>
-        <p><strong>What a connected computer can see and do</strong></p>
+        <h3>What a connected computer can see and do</h3>
         <ul>
           <li>View: your dashboard for the current month, transactions, accounts, categories, income sources, tags, budgets, goals, and insights for the active profile.</li>
           <li>Change: add and edit expenses (including split expenses) and income, and import transactions from a CSV or Excel file. A browser cannot create or edit transfers, budgets, or goals. Receipt images are not displayed.</li>
           <li>Imports: an uploaded file is processed by the App on your phone and held in memory only. Nothing from it is saved until you confirm the import. Pending imports are discarded when the session ends.</li>
           <li>Information shown in the browser is held by that browser and computer while you use it. The App marks its responses as not to be cached and the page keeps only a cryptographic key, not your financial records, in the browser's storage. Ending a session stops further access but cannot erase what your computer has already received or displayed, so use PC Access only on computers and networks you trust.</li>
         </ul>
-        <p><strong>Encryption and the certificate</strong></p>
+        <h3>Encryption and the certificate</h3>
         <p>The connection uses HTTPS (TLS) with a self-signed certificate that your phone generates, not one issued by a public certificate authority. Your browser will therefore show a warning the first time you connect. The App displays the certificate's SHA-256 fingerprint; compare it with the fingerprint in your browser's certificate details before you continue. Encryption does not protect you if you approve a connection from a computer or network you do not trust.</p>
-        <p><strong>Session limits and when access ends</strong></p>
+        <h3>Session limits and when access ends</h3>
         <ul>
           <li>A session ends after 15 minutes without activity, or 8 hours after it was approved, whichever comes first.</li>
           <li>It also ends immediately when you stop PC Access (in the App or from the notification), when the phone's Wi-Fi network or address changes, when you switch to a different profile, or when Premium becomes unavailable.</li>
           <li>While AKMoney is locked by App Lock, PC Access refuses requests and a pending approval request is cancelled. If Android does not allow AKMoney to keep running in the background, PC Access stops shortly after you leave the App.</li>
         </ul>
-        <p><strong>Android foreground service and notifications</strong></p>
+        <h3>Android foreground service and notifications</h3>
         <p>While PC Access is on, AKMoney runs an Android foreground service (type "connected device") so the connection can keep working when the App is in the background. If you remove AKMoney from your recent apps, Android may stop AKMoney from keeping PC Access running in the background. This is separate from Screen Protection (Section 10), which only hides AKMoney's preview in the Recent Apps list; it does not remove AKMoney from Recent Apps and does not end a PC Access session. Android shows an ongoing notification ("PC access is active on your local Wi-Fi") with a "Stop PC Access" action. On Android 13 and later, AKMoney asks for notification permission when you start PC Access so this notification can appear. This notification is only a status indicator. Its presence or absence does not guarantee that the connection is secure or that no one else is connected, so check the PC Manager screen. The feature uses the Android permissions for foreground services, network-state access, and network access; it does not use your location or Wi-Fi network name.</p>
-        <p><strong>What the phone keeps</strong></p>
-        <p>While PC Access runs, the phone holds the pairing code and session details in memory only. These details include the local network address of the connected computer and a device label supplied by the browser (shortened and limited to letters, numbers, and a few symbols). They are discarded when the session ends or PC Access stops, and the App does not keep a history of connected computers. PC Access does not deliberately write these details to logs, and the caveat about the local error log in Section 7 still applies. Its certificate and private key, and the authenticator secret if you enabled it, are kept in your device's secure storage. They are not included in AKMoney backups (including Google Drive backups), and the App is configured to exclude its data from Android's own backup and device-transfer.</p>
+        <h3>What the phone keeps</h3>
+        <p>While PC Access runs, the phone holds the pairing code and session details in memory only. These details include the local network address of the connected computer and a device label supplied by the browser (shortened and limited to letters, numbers, and a few symbols). They are discarded when the session ends or PC Access stops, and the App does not keep a history of connected computers. PC Access does not deliberately write these details to logs, and the caveat about the local error log in Section 7 still applies. Its certificate and private key, and the authenticator secret if you enabled it, are kept in your device's secure storage. They are not included in AKMoney backups (including Google Drive backups).</p>
       </section>
 
       <section id="reports-and-pdf-export">
-        <h2><span class="num">17</span> Financial Reports and PDF Export</h2>
-        <p>AKMoney can generate summary financial reports as PDF files. Reports are produced entirely on your device from your locally stored financial information — no financial data is sent to any server during report generation. A generated report can include summary figures (total income, total expenses, net cash flow, per-category and per-source breakdowns, and individual transaction entries by date, account, category, and amount). A report shows the name of the profile it was generated from. Transaction notes and other free-form text are not included in generated reports.</p>
-        <p>AKMoney does not automatically upload reports. When you tap "Share / Save PDF," the App opens the Android share sheet, and the report is passed to whichever app or destination you select. A report is an ordinary PDF file; it is not encrypted, and the privacy practices of the destination you choose apply from that point forward.</p>
-        <p>Generating reports may require loading fonts. Where your device is online, the App may request a font from Google Fonts to improve the appearance of the PDF. This request is made to Google and does not contain your financial data; Google receives the standard technical information that accompanies such a request, such as your device's IP address. If that request fails or the device is offline, the App uses a built-in fallback font instead.</p>
+        <h2><span class="num">17</span>Reports, Exports and Imports</h2>
+        <p><strong>Reports and exports.</strong> AKMoney can generate financial reports as PDF, CSV, or Excel (XLSX) files. Reports are produced entirely on your device from your locally stored financial information — no financial data is sent to any server during report generation. A report can include summary figures (total income, total expenses, net cash flow, per-category and per-source breakdowns) and individual transaction entries by date, account, category, and amount. A PDF report shows the name of the profile it was generated from and does not include transaction notes or other free-form text. CSV and Excel exports include a description column, so free-form text you entered on transactions can appear in them.</p>
+        <p>AKMoney does not automatically upload reports. When you save a CSV or Excel file, you choose the location with the Android file picker; when you tap "Share / Save PDF," the App opens the Android share sheet and the report is passed to whichever app or destination you select. Report files are ordinary, unencrypted files; the privacy practices of the destination you choose apply from that point forward.</p>
+        <p>PDF reports use a font bundled inside the App, so generating a report does not require a network request.</p>
+        <p><strong>Importing transactions.</strong> If you import transactions from a CSV or Excel file, you select the file with the Android file picker. The file is read and validated on your device, and you review the result before anything is saved. The import does not upload the file anywhere.</p>
       </section>
 
       <section id="milestone-sharing">
-        <h2><span class="num">18</span> Financial Journey Milestone Sharing</h2>
+        <h2><span class="num">18</span>Financial Journey Milestone Sharing</h2>
         <p>When you unlock a Financial Journey milestone or achievement, AKMoney offers an optional sharing feature. Sharing is always explicitly user-initiated — you navigate to the share preview screen and tap the "Share" button yourself.</p>
         <p>The shareable card contains only: the milestone or achievement headline and name (for example, "30-Day Money Habit"), a motivational message, and optionally your XP or level figures if you choose to reveal them using the toggles on the preview screen. Transaction details, account numbers, and other financial records are not included in the shared content.</p>
         <p>Sharing uses the Android native share sheet. AKMoney does not automatically transmit milestone information anywhere; the destination is chosen entirely by you.</p>
       </section>
 
       <section id="reminders">
-        <h2><span class="num">19</span> Reminders</h2>
+        <h2><span class="num">19</span>Reminders</h2>
         <p>The optional daily expense reminder is a local device notification, scheduled and delivered entirely on your device. No information is sent anywhere to enable or deliver reminders.</p>
       </section>
 
       <section id="purchases">
-        <h2><span class="num">20</span> Purchases / Google Play Billing</h2>
-        <p>AKMoney includes optional Premium features that use Google Play Billing. Purchasing is not currently available in the App (it is shown as "Coming Soon"). While the App runs, it uses Google Play's billing service on your device to check whether the Premium product is available and what your purchase status is; this request identifies the Premium product and is handled by Google Play under Google's own privacy policy, and it does not include your financial data. If and when purchases are available, Google Play processes the transaction — including your purchase information such as purchase status and product ID — in accordance with Google's own privacy policy. AKMoney does not process, receive, or store your payment card number or other payment credentials — these are handled entirely by Google Play. AKMoney only reads back your purchase entitlement status (for example, whether Premium is active) to unlock the corresponding features. Premium features include the optional Google Drive backup (Section 12) and PC Access (Section 16), which are described in their own sections. They are available only to people whose Premium entitlement is already active (for example during Google Play closed testing); new Premium purchases are not available at this time.</p>
+        <h2><span class="num">20</span>Purchases / Google Play Billing</h2>
+        <p>AKMoney includes optional Premium features that use Google Play Billing. Purchasing is not currently available in the App: the Premium screen shows "Coming Soon" and offers no buy or restore-purchase control. While the App runs, it uses Google Play's billing service on your device to check whether the Premium product is available and what your purchase status is; this request identifies the Premium product and is handled by Google Play under Google's own privacy policy, and it does not include your financial data. If and when purchases are available, Google Play processes the transaction — including your purchase information such as purchase status and product ID — in accordance with Google's own privacy policy. AKMoney does not process, receive, or store your payment card number or other payment credentials — these are handled entirely by Google Play. AKMoney only reads back your purchase entitlement status (for example, whether Premium is active) to unlock the corresponding features. Premium features include the optional Google Drive backup (Section 12) and PC Access (Section 16), which are described in their own sections. They are available only to people whose Premium entitlement is already active (for example during Google Play closed testing); new Premium purchases are not available at this time.</p>
       </section>
 
+    <p class="group-label">Your choices, safeguards and legal terms</p>
+
       <section id="data-retention-and-deletion">
-        <h2><span class="num">21</span> Data Retention and Deletion</h2>
+        <h2><span class="num">21</span>Data Retention, Deletion and Your Choices</h2>
         <p>Because your data is stored locally on your device, you control its retention. You can delete individual records within the App, or remove all App data by clearing the App's storage or uninstalling the App from your device. Deleting a record removes it from the App's database; see Section 13 for what can remain of an attached image.</p>
-        <p>You can delete a profile you created. Deleting a profile removes that profile's financial data, its receipt images and profile photo, and its Automatic Backups and their status information from the App's storage. If the removal is interrupted, the App completes it the next time it starts. Your original profile cannot be deleted. Deleting a profile does not delete backup files or reports that you exported or shared yourself, or entries in the local error log (Section 7).</p>
+        <p>You can delete a profile you created. Deleting a profile removes that profile's financial data, its receipt images and profile photo, and its Automatic Backups and their status information from the App's storage. If the removal is interrupted, the App completes it the next time it starts. Your original profile cannot be deleted. Deleting a profile does not delete backup files, reports or exports that you saved or shared yourself, or entries in the local error log (Section 7).</p>
         <p>Backup files you have created yourself are stored wherever you saved them and are subject to your own device's or storage provider's file management.</p>
         <p>If you use Google Drive backup, the encrypted backup file remains in your Google account until you delete it. When you disconnect you can choose to delete it; otherwise it stays, subject to Google's retention and your Google account settings. Disconnecting does not delete data on your device. PC Access session details are kept only in memory and are discarded when the session ends or PC Access stops (Section 16).</p>
+        <p><strong>Your choices.</strong> You can access, correct, export, and delete your records yourself inside the App. You can turn off optional features (Automatic Backup, Google Drive upload, PC Access, reminders, voice entry) or revoke their Android permissions at any time. Because AKSoft Apps does not hold your financial records, we cannot look up, correct, or delete them for you. If you have emailed us a report or request and want us to delete it, write to the address in Section 27.</p>
       </section>
 
       <section id="childrens-privacy">
-        <h2><span class="num">22</span> Children's Privacy</h2>
-        <p>AKMoney is intended for general audiences managing their personal finances and is not directed at children. We do not knowingly collect personal information from children, and since the App does not collect or transmit personal information to us in the first place, no such information is retained by us for users of any age.</p>
+        <h2><span class="num">22</span>Children's Privacy</h2>
+        <p>AKMoney is intended for general audiences managing their personal finances and is not directed at children. We do not knowingly collect personal information from children, and since the App does not collect or transmit personal information to us in the first place, the App does not send us personal information automatically for users of any age. Anyone, including a child, could still email us, and we would receive what is sent. If you believe a child has sent us personal information, contact us and we will delete it.</p>
       </section>
 
       <section id="security">
-        <h2>
-          <span class="num">23</span>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z"/></svg>
-          Security
-        </h2>
-        <p>Your data is protected by your device's own operating system security and storage protections, by the encryption of each profile's financial database on your device, and, where you choose to enable it, by App Lock (PIN and/or biometric authentication) as described in Section 10. Receipt images and profile photos are stored as separate files that are not separately encrypted. Automatic backups are encrypted with protection tied to this device, and exported backups are encrypted with the password you choose (Section 11). Because AKMoney does not send your data to AKSoft Apps, your financial information is not exposed to network-based risks arising from our systems, as we operate none. The optional features that use a network carry their own risks, which you should consider before using them: Google Drive backup relies on Google's systems, your Google account security, and your Backup Recovery Password (Section 12), and PC Access relies on the security of your Wi-Fi network and of the computer you approve (Section 16).</p>
+        <h2><span class="num">23</span>Security</h2>
+        <p>Your data is protected by your device's own operating system security and storage protections, by the encryption of each profile's financial database on your device, and, where you choose to enable it, by App Lock (PIN and/or biometric authentication) as described in Section 10. Receipt images and profile photos are stored as separate files that are not separately encrypted. Automatic backups are encrypted with protection tied to this device, and exported backups are encrypted with the password you choose (Section 11). Because AKMoney does not send your data to AKSoft Apps, we hold no copy of your financial records on systems of our own. No method of storage or transmission is completely secure, and we cannot guarantee absolute security. The optional features that use a network carry their own risks, which you should consider before using them: Google Drive backup relies on Google's systems, your Google account security, and your Backup Recovery Password (Section 12), and PC Access relies on the security of your Wi-Fi network and of the computer you approve (Section 16).</p>
       </section>
 
       <section id="legal-disclosure">
-        <h2><span class="num">24</span> Lawful Disclosure</h2>
-        <p>AKSoft Apps does not hold your financial data on any server. Because your data is stored locally on your own device, we have no financial records to disclose in response to legal requests directed at us. If you use Google Drive backup, an encrypted copy is held in your own Google account, which AKSoft Apps cannot access, and we do not have the Backup Recovery Password; requests concerning that copy would be directed at you or Google. If a legal process requires access to data held on your device, that process would be directed at you or your device, not at AKSoft Apps.</p>
+        <h2><span class="num">24</span>Lawful Disclosure</h2>
+        <p>AKMoney is designed so that AKSoft Apps does not hold your financial records on its own servers; they are stored on your device. We may nonetheless hold information you have sent us, such as support emails, feedback, or diagnostic reports, and we may be required to disclose it under applicable law. If you use Google Drive backup, an encrypted copy is held in your own Google account, which AKSoft Apps does not access, and we do not have the Backup Recovery Password. Data on your device, or in your own Google account, is held by you or Google, not by AKSoft Apps, and a request for it would ordinarily be directed to you or to Google. We cannot predict every legal situation.</p>
       </section>
 
       <section id="business-changes">
-        <h2><span class="num">25</span> Business Changes</h2>
-        <p>If AKSoft Apps is involved in a merger, acquisition, or similar business transaction, any user data we hold at that time could be transferred to the new entity. Because AKMoney is designed as a local-first application, we do not hold your financial records — those remain on your device at all times. Any such transaction would be subject to the privacy commitments in this policy.</p>
+        <h2><span class="num">25</span>Business Changes</h2>
+        <p>If AKSoft Apps or AKMoney is involved in a merger, acquisition, sale of assets, or similar business transaction, information AKSoft Apps lawfully holds — such as support emails, feedback, or diagnostic reports you have sent us — may be transferred to the successor or acquiring entity, subject to applicable law. Your financial records are stored on your device and are not held by AKSoft Apps for transfer as part of that transaction. If the publisher or the app's data practices change, this policy will be updated as appropriate.</p>
       </section>
 
       <section id="changes">
-        <h2><span class="num">26</span> Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in the App. If we make changes, we will update the "Last Updated" date above. We encourage you to review this policy periodically.</p>
+        <h2><span class="num">26</span>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in the App. If we make changes, we will update the "Last updated" date at the top of this page. We have not committed to any other form of notice, so please review this page periodically.</p>
       </section>
 
-      <section id="contact">
-        <h2><span class="num">27</span> Contact Us</h2>
-        <p>If you have questions about this Privacy Policy or the App, you can contact us at: <a href="mailto:aksoft.support@gmail.com">aksoft.support@gmail.com</a></p>
+      <section id="contact" style="border-bottom:0">
+        <h2><span class="num">27</span>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or the App, you can contact AKSoft Apps at: <a href="mailto:aksoft.support@gmail.com">aksoft.support@gmail.com</a></p>
       </section>
 
-    </main>
-
+    </article>
   </div>
-
-</div>
+</main>
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-brand">AK<span>Money</span></div>
-    <div class="footer-meta">Budget &amp; Expense Tracker &middot; AKSoft Apps</div>
-    <div class="footer-links">
-      <a href="#content">Privacy Policy</a>
-      <span class="sep">&middot;</span>
-      <a href="mailto:aksoft.support@gmail.com">aksoft.support@gmail.com</a>
+    <div class="brand">
+      <img class="brand-mark" src="akmoney-mark.png" width="36" height="36" alt="">
+      <span class="brand-text"><span class="brand-name">AKMoney</span><span class="brand-sub">Budget &amp; Expense Tracker</span></span>
     </div>
-    <div class="footer-updated">Last Updated: October 9, 2026</div>
+    <p class="footer-meta">Published by AKSoft Apps<br>Last updated October 10, 2026</p>
+    <ul>
+      <li><a href="#top">Privacy Policy</a></li>
+      <li><a href="mailto:aksoft.support@gmail.com">aksoft.support@gmail.com</a></li>
+    </ul>
   </div>
 </footer>
+
+<script>
+(function () {
+  var details = document.querySelector('nav.toc details');
+  var desktop = window.matchMedia('(min-width: 900px)');
+  function sync() { if (desktop.matches) details.open = true; else if (!details.dataset.touched) details.open = false; }
+  details.addEventListener('toggle', function () { if (!desktop.matches) details.dataset.touched = '1'; });
+  sync();
+  (desktop.addEventListener ? desktop.addEventListener('change', sync) : desktop.addListener(sync));
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+  links.forEach(function (a) {
+    a.addEventListener('click', function () { if (!desktop.matches) { details.open = false; } });
+  });
+  if (!('IntersectionObserver' in window)) return;
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var current = null;
+  function set(id) {
+    if (!byId[id] || current === id) return;
+    if (current) byId[current].removeAttribute('aria-current');
+    byId[id].setAttribute('aria-current', 'location');
+    current = id;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) set(e.target.id); });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  document.querySelectorAll('.policy section[id]').forEach(function (s) { io.observe(s); });
+})();
+</script>
 
 </body>
 </html>
